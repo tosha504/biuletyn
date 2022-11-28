@@ -1,0 +1,35 @@
+//Fonts
+$ibm: 'IBM Plex Sans Condensed', sans-serif;
+$pop: 'Poppins', sans-serif;
+
+//Colors    
+$white: #fff;
+$primary: #bf8c69;
+
+//break-points
+$bp1: 575px + 0.98;
+$bp2: 767px + 0.98;
+$bp3: 991px + 0.98;
+$bp4: 1199px + 0.98;
+$bp5: 1439px + 0.98;
+
+$width: 1200px;
+
+@mixin fontz($fmx,$fmn){
+    font-size: calc(#{$fmx} + (#{$fmn} * (100vw / 1400)));
+}
+
+@mixin line($lmx,$lmn){
+    line-height: calc(#{$lmx} + (#{$lmn} * (100vw / 1400)));
+}
+// , $color-hover-bg
+@mixin btn ($color, $bgColor ) {
+    color:$color;
+    // background-color: $bgColor;
+    background: $bgColor;
+    color: #232323;
+    max-width: 200px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-size: 300% 100%;
+}

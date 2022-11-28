@@ -1,0 +1,51 @@
+.vip {
+    &__content {
+        padding: 10vh 0 20vh;
+        color: $white;
+        text-align: center;
+        max-width: 50vw;
+        font-family: $ibm;
+        @media (min-width:$bp5) {
+            max-width: 45vw;
+        }
+        @media (max-width:$bp4) {
+            max-width: 65vw;
+        }
+
+        @media (max-width:$bp3) {
+            max-width: 100vw;
+        }
+
+        &_title {
+            @include fontz(40px, 30);
+            margin-bottom: 50px;
+        }
+
+        &_wrap {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10%;
+            * {
+                &:not(:last-child) {
+                    margin-bottom: 50px;
+                }
+            }
+
+            &-title {
+                @include fontz(20px, 15);
+                line-height: 120%;
+                font-weight: 500;
+            }
+
+            &-descr {
+                @include fontz(16px, 4);
+                line-height: 120%;
+                font-family: $pop;
+                font-weight: 200;
+            }
+
+            &-cont {
+                @include fontz(20px, 5);
+            }
+        }
+    }
+}

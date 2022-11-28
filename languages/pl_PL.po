@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: realestate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-20 07:52+0000\n"
+"PO-Revision-Date: 2022-10-20 11:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polski\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.3\n"
+"X-Domain: realestate"
+
+#: template-parts/content-page.php:42
+msgid " rooms :"
+msgstr "ilość pokoi :"
+
+#: template-parts/content-page.php:41
+msgid " rooms from :"
+msgstr "ilość pokoi od:"
+
+#: template-parts/content-page.php:44
+msgid " to "
+msgstr "do"
+
+#: functions.php:129
+msgid "Add widgets here."
+msgstr ""
+
+#: template-parts/content-page.php:45
+msgid "Area :"
+msgstr "Powierzchnia :"
+
+#: builder-templates/choose-country.php:79
+msgid "Area from"
+msgstr "Powierzchnia od"
+
+#: template-parts/content-page.php:44
+msgid "Area from :"
+msgstr "Powierzchnia od"
+
+#: builder-templates/choose-country.php:83
+msgid "Area to"
+msgstr "Powierzchnia do"
+
+#: template-parts/content-page.php:51
+msgid "Call us"
+msgstr "Zadzwoń "
+
+#: builder-templates/choose-country.php:39
+msgid "Country"
+msgstr "Kraj"
+
+#. Description of the theme
+msgid "Description"
+msgstr ""
+
+#: taxonomy.php:48
+msgid "from :"
+msgstr "od"
+
+#: template-parts/content-page.php:49 template-parts/content-page.php:77
+msgid "Gallery"
+msgstr "Galeria"
+
+#. Name of the template
+msgid "Home"
+msgstr ""
+
+#. URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://thenewlook.pl"
+msgstr ""
+
+#: 404.php:18
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Wygląda na to, że nic nie znaleziono w tym miejscu. Maybe try a search?"
+"zaloguj się"
+
+#: functions.php:52
+msgid "Lewa część meni"
+msgstr ""
+
+#: taxonomy.php:59
+msgid "Main page"
+msgstr "Strona główna"
+
+#: functions.php:54
+msgid "Meni na telefon"
+msgstr ""
+
+#: taxonomy.php:56
+msgid "No search results found!"
+msgstr "Nie znaleziono wyników wyszukiwania!"
+
+#: taxonomy.php:47
+msgid "Number of rooms :"
+msgstr "Ilość pokoi :"
+
+#: functions.php:53
+msgid "Prawa część meni"
+msgstr ""
+
+#: builder-templates/choose-country.php:57
+msgid "Price from"
+msgstr "Cena od"
+
+#: builder-templates/choose-country.php:62
+msgid "Price to"
+msgstr "Cena do"
+
+#: builder-templates/choose-country.php:48
+msgid "Property type"
+msgstr "Typ nieruchomości"
+
+#. Name of the theme
+msgid "realestate"
+msgstr ""
+
+#: builder-templates/choose-country.php:69
+msgid "Roooms from"
+msgstr "Ilość pokoi od"
+
+#: builder-templates/choose-country.php:74
+msgid "Roooms to"
+msgstr "Ilość pokoi do"
+
+#: builder-templates/choose-country.php:87
+msgid "Search"
+msgstr "Szukaj"
+
+#: template-parts/content-page.php:50
+msgid "Send a question"
+msgstr "Wyślij zapytanie"
+
+#: functions.php:127
+msgid "Sidebar"
+msgstr ""
+
+#: taxonomy.php:48
+msgid "Surface :"
+msgstr ""
+
+#. Author of the theme
+msgid "THE NEW LOOK"
+msgstr ""

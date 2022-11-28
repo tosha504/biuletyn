@@ -1,0 +1,94 @@
+//builder-templates/banner-templates/slider
+.slider {
+    position: relative;
+    color: $white;
+    
+    .slide {
+    min-height: 80vh;
+
+      
+
+        // &__counter {
+        //     position: absolute;
+        //     @include fontz(30px, 56);
+        //     z-index: 3;
+        //     left: 65%;
+        //     top: 80%;
+        //     font-family: $ibm;
+        //     font-weight: bold;
+        //     display: flex;
+        //     align-items: center;
+        //     @media (max-width:$bp4) {
+        //         left: 75%;
+        //     }
+        //     @media (max-width:$bp3) {
+        //         left: 70%;
+        //         top: 100%;
+        //     }
+        //     @media (max-width:$bp2) {
+        //         display: none;
+        //     }
+            
+        //     .click-next, .click-prev {
+        //         max-width: 100%;
+        //         background-color: transparent;
+        //         width: 100px;
+        //         min-height: 20px;
+        //         border: none;
+        //         @media (max-width:$bp4) {
+        //             width: 80px;
+        //         }
+        //     }
+
+        //     .click-prev {
+        //         margin-right: 15px;
+        //         background: url(../asset/img/arrowleft.svg) no-repeat left;
+        //     }
+
+        //     .click-next {
+        //         margin-left: 15px;
+        //         background: url(../asset/img/arrowright.svg) no-repeat right;
+        //     }
+        // }
+
+        &__content {
+            margin: 10%;
+            padding-left: 30px;
+            border-left: 1px solid $white;
+            z-index: 2;
+            position: relative;
+
+            @media (max-width:$bp2) {
+                border: none;
+                margin: 30% 5%;
+                padding: 0;
+            }
+
+            @media (max-width:$bp1) {
+                margin: 50% 5%;
+            }
+        }
+
+        &__title {
+            font-family: $ibm;
+            @include fontz(30px, 56);
+            line-height: 110%;
+            margin-bottom: 50px;
+            span{
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+
+        &__description {
+            font-size: 24px;
+            font-weight: 400;
+            max-width: 500px;
+        }
+       
+    }
+
+  
+
+ 
+}

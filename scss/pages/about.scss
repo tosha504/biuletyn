@@ -1,0 +1,29 @@
+.page-template-about {
+    .about{ 
+        &__image {
+            min-height: 55vh;
+            @media (min-width:$bp2) {
+                min-height: 80vh;
+            }
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .title {
+        @include fontz(35px, 15);
+        font-family: $ibm;
+        @media (min-width:$bp2) {
+            padding: 50px 150px 0;
+
+        }
+    }
+}
+

@@ -1,0 +1,57 @@
+.page-template-blog {
+    background-color: #EFEFEF;
+
+    .title {
+        @include fontz(35px, 15);
+        font-family: $ibm;
+        @media (min-width:$bp2) {
+            padding: 50px 0px;
+        }
+    }
+
+    .blog {
+        background: $white;
+        &__items {
+            display: flex;
+            padding: 50px 0;
+            position: relative;
+            &:not(:last-child) {
+                &::after {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    border: 1px solid #ccc;
+                    bottom: 0px;
+                }
+            }
+
+            &_left{
+                flex: 1 1 30%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            &_right {
+                flex: 1 1 70%;
+
+                &-title {
+                    a{
+                        color: #232323;
+                    }
+                    @include fontz(20px, 15);
+                    font-family: $ibm;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .btn {
+            background: #232323 ;
+            color: $white;
+        }
+    }
+}
+
+

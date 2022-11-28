@@ -1,0 +1,89 @@
+.usually {
+    padding-top: 50px;
+    position: relative;
+    
+
+    &__title {
+        text-align: center;
+        @include fontz(25px, 15);
+        margin-bottom: 30px;
+    }
+
+    &__slider {
+    color: $white;
+        &_slide {
+           padding: 200px 0;
+
+        .container {
+            position: relative;
+            z-index: 3;
+        }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                font-family: $ibm;    
+                transform: translateY(85px);
+
+                h3 {
+                    @include fontz(30px, 20);
+                    font-weight: 700;
+                    span {
+                        font-style: italic;
+                        font-weight: 500;
+                    }
+                    
+                }
+                
+                p {
+                    @include fontz(25px, 15);
+                    font-weight: 700;
+                }
+
+                .btn {
+                    max-width: 130px;
+                    margin-top: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+        z-index: 2;
+
+
+        li {
+            background-color: transparent;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            transition: .3s;
+            cursor: pointer;
+            border: 1px solid $white;
+
+            @media (min-width:$bp3) {
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+        button {
+            display: none;
+
+        }
+
+        .slick-active {
+            background-color: $white;
+        }
+    }
+}

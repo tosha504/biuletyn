@@ -1,0 +1,35 @@
+.float-img {
+    @media (min-width:$bp2) {
+        float: left;
+        min-height: 35vh;
+        margin-right: 50px;
+    }
+}
+
+.main-title {
+    background-color: #efefef;
+    @include fontz(35px, 15);
+    font-family: $ibm;
+    @media (min-width:$bp2) {
+        padding: 50px 0px;
+    }
+    text-align: start;
+    padding: 20px 0;
+}
+
+.wrap { 
+    padding: 50px 0;
+
+    p {
+        &:not(:first-child) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    h4 {
+        @include fontz(20px, 15);
+        font-family: $ibm;
+        margin-bottom: 30px;
+    }
+}

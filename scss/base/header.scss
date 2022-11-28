@@ -1,0 +1,122 @@
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 20px 0;
+    position: fixed;
+    background: linear-gradient(0deg, rgba(24,24,24,0) 25%, rgba(24,24,24,0.8) 100%);
+    transition: 0.35s;
+    &.fixed {
+        background: #232323;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__left-menu, &__right-menu {
+        @media (max-width:$bp4) {
+            display: none;
+        }
+        display: flex;
+        li {
+            margin: 0 10px;
+            a {
+                color: $white;
+                // font-size: 20px;
+                @include fontz(16px, 4);
+                @media (min-width:$bp3) {
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+        @media (max-width: $bp4) {  
+            display: flex;
+            padding: 50px;
+            position: fixed;
+            left: -100%;
+            top: 0;
+            bottom: 0;
+            z-index: 1000;
+            align-items: start;
+            flex-direction: column;
+            overflow: auto;
+            transition: all .5s ease 0s;
+            
+            
+            &.active {
+                display: flex;
+                width: 80%;
+                left: 0;
+                background-color: $primary;
+                li {
+                    margin: 10px 0;
+                    a {
+                        color: $white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__burger {
+        z-index: 3;
+        display: none;
+        position: relative;
+        width: 40px;
+
+        span {
+            background-color: $white;
+            height: 3px;
+            width: 40px;
+            position: absolute;
+            transition: 0.4s;
+
+            &:before, &:after{
+                background-color: $white;
+                width: 40px;
+            }
+        
+            &:before {
+              position: absolute;
+              top: 8px;
+              content: "";
+              height: 3px;
+              transition: 0.4s;
+
+            }
+            &:after {
+              position: absolute;
+              bottom: 8px;
+              content: "";
+              height: 3px;
+            }
+        
+            &.active {
+              transform: rotate(-45deg);
+              &:before {
+                transform: rotate(90deg);
+                top: 0;
+              }
+              &::after {
+                opacity: 0;
+              }
+            }
+        }
+
+        @media (max-width: $bp4) {
+            display: block;
+        }
+    }
+}

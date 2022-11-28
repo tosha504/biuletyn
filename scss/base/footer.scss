@@ -1,0 +1,183 @@
+//media
+.media {
+    padding: 100px 0;
+    text-align: center;
+    *{
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        @include fontz(25px, 45);
+        
+        font-family: $ibm;
+        span {
+            color: $primary;
+            font-style: italic;
+            font-weight: 100;
+        }
+    }
+
+    &__text, &__descr  {
+        max-width: 80vh;
+        margin: 0 auto;
+    }
+
+    &__text {
+        @include fontz(16px, 12);
+    }
+
+    &__descr {
+        @include fontz(16px, 4);
+        
+    }
+
+    .btn {
+        color: $white;
+        background: #000;
+    }
+
+    &__icons {
+        display: flex;
+        padding: 50px 0;
+        @media (max-width:$bp3) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &_icon {
+            flex: 1 1 20%;
+            max-width: 300px;
+            @media (max-width:$bp3) {
+                flex: 1 1 50%;
+            }
+            @media (max-width:$bp1) {
+                flex: 1 1 100%;
+            }
+        }
+    }
+}
+
+//footer
+.footer {
+    position: relative;
+    padding: 50px 0;
+    color: $white;
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__container {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        margin: 50px auto;
+        text-align: center;
+        align-items: flex-start;
+        @media (max-width:$bp2) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__left, &__newsletter {
+        flex: 1 1 50%;
+        @media (max-width:$bp2) {
+            flex: 1 1 100%;
+        }
+        @media (min-width:$bp2) {
+            padding: 0 1%;
+        }
+    }
+
+    &__left {
+        @media (min-width:$bp2) {
+            margin-top: 50px;
+        }
+        a {
+            color: $white;
+            @media (min-width:$bp3) {
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        &_name, &_phones, &_mail {
+            margin-bottom: 35px;
+        }
+
+        &_phones {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &_socials {
+            display: flex;
+            padding: 20px 0;
+            justify-content: center;
+            a {
+                display: flex;
+                margin: 0 10px;
+                padding: 15px;
+                border: 1px solid $white;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                max-width: 100%;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    &__newsletter {
+        @media (min-width:$bp2) {
+            border-left: 1px solid $white;
+            padding: 4% 5%;
+        }
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        align-items: flex-start;
+        padding: 4% 0%;
+        *{
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        
+        input[type=email] {
+            font-size: 18px;
+            background-color: transparent;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 1px solid $white;
+            color: $white;
+            width: 100%;
+        }
+        
+        
+
+        &_title {
+            @include fontz(25px,20);
+            font-weight: 500;
+            
+        }
+
+        &_subtitle {
+            @include fontz(16px, 4);
+
+        }
+
+        .btn {
+            text-align: center;
+            max-width: 130px;
+        }
+
+    }
+}
